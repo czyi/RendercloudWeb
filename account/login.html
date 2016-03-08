@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<title>米童云渲染-登陆</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="../referenced_files/normalize.css">
+	</head>	
+
+	<body onload="load()" style="overflow:hidden;">
+		<div style="position:absolute;width:100%;height:100%;">
+		    <img src="../images/reg-bg.png" width="100%" height="100%">
+		</div>
+		<div id="centerpart" style="position:absolute;top:50%;left:50%;width:500px;height:410px;margin:-205px 0 0 -250px;">
+			<form action="">
+				<div style="position:absolute;width:100%;height:100%;text-align:center;top:0px;">
+					<p style="font-size:36px;color:#f0f0f0;">欢迎:)</p><br>
+				</div>
+				<div style="position:absolute;width:100%;height:100%;text-align:center;top:146px;">
+					<input class="reg-input" value="  登录名/邮箱" onclick="hide_default(this)" >
+				</div>
+				<div style="position:absolute;width:100%;height:100%;text-align:center;top:238px;">
+					<input class="reg-input" value="  密码"  onclick="hide_default(this)">
+				</div>
+				<div id="passw" style="position:absolute;width:100%;height:100%;text-align:center;top:248px;margin-left:280px;">
+					<a id="forgetpw" style="font-size:14px;color:#f0f0f0;opacity:0.4;text-decoration:none;border-bottom:1px #f0f0f0 dotted;" href="forgetpw.html">忘记密码？</a>
+				</div>
+				<div style="position:absolute;width:100%;height:100%;text-align:center;top:325px;">
+					<button class="reg-bt" type="submit">登录</button><br>
+				</div>
+			</form>
+			<div style="position:absolute;width:100%;height:100%;text-align:center;top:370px;">
+				<p style="font-size:14px;color:#f0f0f0;">
+					<font style="opacity:0.4;">没有账号？请先</font>
+					<a style="font-size:18px;color:#f0f0f0;text-decoration:none;border-bottom:1px #f0f0f0 dotted;opacity:0.4;" id="regis" href="register.html"> 注册</a>
+				</p>
+			</div>
+		</div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+function hide_default(x)
+{
+	x.value="";
+	x.style.opacity=1;
+	x.style.background="rgba(255,255,255,0.1)";
+	document.getElementById('forgetpw').style.opacity=1;
+	document.getElementById('regis').style.opacity=1;
+}
+function load()
+{
+	var h=window.screen.height;
+	var w=window.screen.width;
+	var cp=document.getElementById('centerpart');
+
+	if(w<650)
+	{
+		cp.style.width="100%";
+		cp.style.marginLeft="0";
+		cp.style.marginTop="0";
+		if(h<600) cp.style.top="0";
+		else if(h<700) cp.style.top="10%";
+		else cp.style.top="20%";
+
+		cp.style.left="0";
+
+		document.getElementById('passw').style.top="285px";
+		document.getElementById('passw').style.marginLeft=0;
+	}
+	if(h<450)
+	{
+		cp.style.overflow="scroll";
+	}
+}
+</script>
+<style type="text/css">
+body{
+	overflow:hidden;
+	font-family: "微软雅黑"；
+}
+.reg-bt{
+	width:150px;
+	height: 47px; 
+    text-align: center;
+    outline:none;
+    background: #c1392d no-repeat scroll top right;
+    color: #F0F0F0;
+    font-size: 24px;
+    cursor: pointer; 
+    border: 2px solid #c1392d;
+    -moz-border-radius: 8px;      /* Gecko browsers */
+    -webkit-border-radius:8px;   /* Webkit browsers */
+    border-radius:8px;            /* W3C syntax */
+    font-family: "微软雅黑"；
+}
+.reg-input{
+	width:93.6%;
+	height:47px;
+	outline:none;
+    background: #F0F0F0 no-repeat scroll top right;
+    background:rgba(255,255,255,0.5);
+    color: #F0F0F0;
+    font-size: 24px;
+    opacity: 0.7;
+    border: 2px solid rgba(255,255,255,0.1);
+    -moz-border-radius: 8px;      /* Gecko browsers */
+    -webkit-border-radius: 8px;   /* Webkit browsers */
+    border-radius:8px;            /* W3C syntax */
+    font-family: "微软雅黑"；
+}
+</style>

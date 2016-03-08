@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>米童云渲染</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width", initial-scale="1.0">
+		<link type="text/css" rel="stylesheet" href="css/normalize.css">
+		<link type="text/css" rel="stylesheet" href="css/smooths.css">
+
+	</head>	
+
+	<body>
+		<div class="container">
+			<div class="st-container">
+				<!-- Nav begin -->
+				<div class="st-nav-img">
+				<img src="images/logo-white.png">
+				</div>
+				<input type="radio" name="radio-set" checked="checked" id="st-control-1">
+				<a href="#st-panel-1">主页</a>
+				<input type="radio" name="radio-set" id="st-control-2">
+				<a href="#st-panel-2">简介</a>
+				<input type="radio" name="radio-set" id="st-control-3">
+				<a href="#st-panel-3">案例</a>
+				<input type="radio" name="radio-set" id="st-control-4">
+				<a href="#st-panel-4">团队</a>
+				<input type="radio" name="radio-set" id="st-control-5">
+				<a href="#st-panel-5">联系</a>
+				<div class="st-nav-arrow">
+					<img src="images/arrow-down-white.png">
+				</div>
+				<!-- Nav end  Content begin -->
+				
+				<div class="st-scroll">
+				<section class="st-panel" id="st-panel-1">
+					<div class="st-plane-in-1">
+						<img src="images/index-bg-1.png">
+					</div>
+					<div class="st-plane-in-1-txt">
+						<p>渲染交给我，时间留给你</p>
+						<p>午时巴士，享受错过的美</p>
+					</div>	
+				</section>
+				<section class="st-panel st-color" id="st-panel-2">
+					我们的优势
+				</section>
+				<section class="st-panel" id="st-panel-3">
+					<h2>Tranquillity</h2>
+					<p>Spanning five schools — architecture and planning; engineering; humanities, arts, and social sciences Spanning five schools — architecture and planning; engineering; humanities, arts, and social sciences 
+					Spanning five schools — architecture and planning; engineering; humanities, arts, and social sciences</p>
+				</section>
+				<section class="st-panel st-color" id="st-panel-4">
+					<h2>Positivity</h2>
+					<p>Spanning five schools — architecture and planning; engineering; humanities, arts, and social sciences Spanning five schools — architecture and planning; engineering; humanities, arts, and social sciences 
+					Spanning five schools — architecture and planning; engineering; humanities, arts, and social sciences</p>
+				</section>
+				<section class="st-panel" id="st-panel-5">
+					<h2>Passion</h2>
+					<p>Spanning five schools — architecture and planning; engineering; humanities, arts, and social sciences Spanning five schools — architecture and planning; engineering; humanities, arts, and social sciences 
+					Spanning five schools — architecture and planning; engineering; humanities, arts, and social sciences</p>
+				</section>
+				</div>
+
+			</div>
+		</div>
+
+							<p><img src="images/album_img1.png"></p>
+							<p><img src="images/album_img2.png"></p>
+							<p><img src="images/album_img3.png"></p>
+							<p><img src="images/album_img4.png"></p>
+							<p><img src="images/album_img5.png"></p>
+							<p><img src="images/album_img6.png"></p>
+							<p><img src="images/album_img7.png"></p>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>点击按钮改变CSS样式</title>
+<meta http-equiv="content-type" content="text/html;charset=gb2312">
+<style type="text/css">
+* {
+ padding:0px;
+ margin:0px;
+}
+.box {
+ width:300px;
+ height:300px;
+ border:1px solid #CBC4F7;
+ font-size:13px;
+ margin:100px auto;
+}
+.divWidth {
+ width:400px;
+}
+.divHeight {
+ height:400px;
+}
+.divBgColor {
+ background-color:#DCF3B1;
+}
+p {
+ padding:15px 5px;
+}
+ul li {
+ list-style:none;
+ width:140px;
+ height:32px;
+ text-align:center;
+ line-height:32px;
+ background-color:#C4EA84;
+ border:1px solid #9BEA75;
+ margin:0px auto;
+ margin-bottom:10px;
+ cursor:pointer;
+ background-image:-webkit-linear-gradient(top, #C4EA84, #53AC28);
+ background-image:-moz-linear-gradient(top, #C4EA84, #53AC28);
+ background-image:-o-linear-gradient(top, #C4EA84, #53AC28);
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px;
+ -o-border-radius:4px;
+}
+</style>
+<script type="text/javascript">
+window.onload=function(){
+ var btn1 = document.getElementById("btn1");
+ var btn2 = document.getElementById("btn2");
+ var btn3 = document.getElementById("btn3");
+ funClick = function(btnID,changeClass){
+  btnID.onclick = function() {
+   var boxClass = btnID.parentNode.parentNode.className;
+   var ifClass = boxClass.indexOf(changeClass);
+   if(ifClass < 0){
+    boxClass = boxClass + " " + changeClass;
+   }else {
+    boxClass = boxClass.replace(changeClass,"");
+   }
+   btnID.parentNode.parentNode.className = boxClass;
+  }
+ }
+ funClick(btn1,"divWidth");
+ funClick(btn2,"divHeight");
+ funClick(btn3,"divBgColor");
+}
+</script>
+</head>
+<body>
+<div class="box">
+ <p>这里是少许文本</p>
+ <ul>
+  <li id="btn1">点我调整宽度</li>
+  <li id="btn2">点我调整高度</li>
+  <li id="btn3">点我调整背景颜色</li>
+ </ul>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+
+
+
+</html>
